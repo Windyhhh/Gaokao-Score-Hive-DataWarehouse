@@ -1,0 +1,1011 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = 4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b
+
+Logging initialized using configuration in jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+Hive Session ID = f900b285-5e1e-4957-81b5-50f2a5f3057f
+OK
+Time taken: 0.391 seconds
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: location_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+Query ID = windy_20251222233705_f5c8a444-69cc-4a0a-84de-6aaf5a34bf3d
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:37:11	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:37:12	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-37-05_996_1166571342233285351-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile01--.hashtable (401 bytes)
+2025-12-22 23:37:12	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-37-05_996_1166571342233285351-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile11--.hashtable (404 bytes)
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0101, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0101/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0101
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2025-12-22 23:37:20,181 Stage-3 map = 0%,  reduce = 0%
+2025-12-22 23:37:25,332 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 7.29 sec
+2025-12-22 23:37:29,451 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 9.24 sec
+MapReduce Total cumulative CPU time: 9 seconds 240 msec
+Ended Job = job_1766400508813_0101
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0102, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0102/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0102
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2025-12-22 23:37:42,065 Stage-4 map = 0%,  reduce = 0%
+2025-12-22 23:37:45,809 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 2.59 sec
+2025-12-22 23:37:49,895 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 4.17 sec
+MapReduce Total cumulative CPU time: 4 seconds 170 msec
+Ended Job = job_1766400508813_0102
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 9.24 sec   HDFS Read: 1880829 HDFS Write: 784 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 4.17 sec   HDFS Read: 10204 HDFS Write: 886 SUCCESS
+Total MapReduce CPU Time Spent: 13 seconds 410 msec
+OK
+2014	天津	1162	470.11	207.0	671.0
+2014	广西	1431	485.65	90.0	681.0
+2014	青海	865	417.63	216.0	653.0
+2015	天津	1232	487.96	236.0	687.0
+2015	广西	1552	447.1	177.0	675.0
+2015	青海	918	413.82	178.0	649.0
+2016	天津	858	483.75	197.0	677.0
+2016	广西	1422	460.46	192.0	658.0
+2016	青海	829	419.22	214.0	650.0
+2017	天津	1254	452.27	167.0	827.0
+2017	广西	1444	464.23	242.0	655.0
+2017	青海	907	408.08	232.0	624.0
+2018	天津	879	438.89	146.0	665.0
+2018	广西	18	444.62	270.5	639.0
+2018	青海	368	409.12	172.0	599.0
+Time taken: 44.961 seconds, Fetched: 15 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, batch_key, control_score, location_key, avg_score
+No Stats for gaokao_dw@batch_dimension, Columns: batch_name, batch_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222233751_814a06e2-7392-47cd-ba4a-ae269b9be21d
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:37:56	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:37:58	Dump the side-table for tag: 1 with group count: 4 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-37-51_103_8127599053716078294-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile31--.hashtable
+2025-12-22 23:37:58	Dump the side-table for tag: 1 with group count: 2 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-37-51_103_8127599053716078294-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile41--.hashtable
+2025-12-22 23:37:58	End of local task; Time Taken: 1.312 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0103, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0103/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0103
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2025-12-22 23:38:05,267 Stage-4 map = 0%,  reduce = 0%
+2025-12-22 23:38:10,394 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 6.1 sec
+2025-12-22 23:38:15,176 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 8.01 sec
+MapReduce Total cumulative CPU time: 8 seconds 10 msec
+Ended Job = job_1766400508813_0103
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0104, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0104/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0104
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 1
+2025-12-22 23:38:27,082 Stage-5 map = 0%,  reduce = 0%
+2025-12-22 23:38:31,240 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 5.62 sec
+2025-12-22 23:38:36,363 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 7.99 sec
+MapReduce Total cumulative CPU time: 7 seconds 990 msec
+Ended Job = job_1766400508813_0104
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 8.01 sec   HDFS Read: 1885745 HDFS Write: 1353 SUCCESS
+Stage-Stage-5: Map: 1  Reduce: 1   Cumulative CPU: 7.99 sec   HDFS Read: 10470 HDFS Write: 1774 SUCCESS
+Total MapReduce CPU Time Spent: 16 seconds 0 msec
+OK
+本科一批	天津	文科	400	573.7	534.83
+本科一批	天津	理科	580	578.25	522.94
+本科一批	广西	体育类	1	434.0	NULL
+本科一批	广西	文科	441	579.17	538.91
+本科一批	广西	理科	656	554.35	491.53
+本科一批	广西	艺术类	1	367.0	NULL
+本科一批	青海	文科	366	504.1	465.66
+本科一批	青海	理科	632	479.28	402.88
+本科二批	天津	体育类	1	439.0	NULL
+本科二批	天津	文科	720	486.26	469.61
+本科二批	天津	理科	886	465.89	441.01
+本科二批	天津	艺术类	1	444.0	NULL
+本科二批	广西	体育类	2	347.5	NULL
+本科二批	广西	文科	1903	476.21	401.79
+本科二批	广西	理科	2132	421.24	338.26
+本科二批	广西	综合	1	343.5	NULL
+本科二批	广西	艺术类	2	395.5	NULL
+本科二批	青海	体育类	2	336.5	NULL
+本科二批	青海	文科	683	435.61	420.69
+本科二批	青海	理科	915	384.39	365.16
+本科二批	青海	艺术类	2	402.75	NULL
+Time taken: 46.353 seconds, Fetched: 21 row(s)
+Query ID = windy_20251222233837_955ed2d1-74ca-4c08-91e4-f60c484a68cf
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2025-12-22 23:38:44	Dump the side-table for tag: 1 with group count: 6 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-38-37_476_8682720175030333103-1/-local-10006/HashTable-Stage-2/MapJoin-mapfile51--.hashtable
+2025-12-22 23:38:44	End of local task; Time Taken: 1.195 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0105, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0105/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0105
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2025-12-22 23:38:49,121 Stage-2 map = 0%,  reduce = 0%
+2025-12-22 23:38:54,237 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 7.1 sec
+2025-12-22 23:39:01,435 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 10.8 sec
+MapReduce Total cumulative CPU time: 10 seconds 800 msec
+Ended Job = job_1766400508813_0105
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0106, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0106/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0106
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2025-12-22 23:39:12,897 Stage-3 map = 0%,  reduce = 0%
+2025-12-22 23:39:16,475 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 2.27 sec
+2025-12-22 23:39:20,554 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 3.64 sec
+MapReduce Total cumulative CPU time: 3 seconds 640 msec
+Ended Job = job_1766400508813_0106
+MapReduce Jobs Launched: 
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 10.8 sec   HDFS Read: 1868831 HDFS Write: 306 SUCCESS
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 3.64 sec   HDFS Read: 8917 HDFS Write: 286 SUCCESS
+Total MapReduce CPU Time Spent: 14 seconds 440 msec
+OK
+2014	837	3458	463.42	434.41
+2015	940	3702	452.45	413.84
+2016	839	3109	455.89	441.3
+2017	1016	3605	445.94	430.71
+2018	536	1265	430.31	417.5
+Time taken: 44.153 seconds, Fetched: 5 row(s)
+Query ID = windy_20251222233921_9ce50cc5-c0a5-4e23-9def-57f2df679812
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:39:27	Dump the side-table for tag: 1 with group count: 4 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-39-21_645_8338949948909501010-1/-local-10006/HashTable-Stage-2/MapJoin-mapfile61--.hashtable
+2025-12-22 23:39:27	End of local task; Time Taken: 1.205 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0107, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0107/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0107
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2025-12-22 23:39:34,480 Stage-2 map = 0%,  reduce = 0%
+2025-12-22 23:39:39,598 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 7.28 sec
+2025-12-22 23:39:44,712 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 10.11 sec
+MapReduce Total cumulative CPU time: 10 seconds 110 msec
+Ended Job = job_1766400508813_0107
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0108, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0108/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0108
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2025-12-22 23:39:55,215 Stage-3 map = 0%,  reduce = 0%
+2025-12-22 23:40:00,342 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 6.52 sec
+2025-12-22 23:40:04,420 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 8.26 sec
+MapReduce Total cumulative CPU time: 8 seconds 260 msec
+Ended Job = job_1766400508813_0108
+MapReduce Jobs Launched: 
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 10.11 sec   HDFS Read: 1869869 HDFS Write: 237 SUCCESS
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 8.26 sec   HDFS Read: 9261 HDFS Write: 238 SUCCESS
+Total MapReduce CPU Time Spent: 18 seconds 370 msec
+OK
+广西	1046	9	5867	463.95	395.24
+天津	889	10	5385	467.12	439.22
+青海	733	7	3887	414.04	383.8
+Time taken: 43.835 seconds, Fetched: 3 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, batch_key, location_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+No Stats for gaokao_dw@batch_dimension, Columns: batch_name, batch_key
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222234005_9507f731-a067-46bd-8bc4-49cac300cacd
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2025-12-22 23:40:11	Dump the side-table for tag: 1 with group count: 10 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-40-05_497_2235497335242971786-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile71--.hashtable
+2025-12-22 23:40:11	Dump the side-table for tag: 1 with group count: 15 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-40-05_497_2235497335242971786-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile81--.hashtable
+2025-12-22 23:40:11	Dump the side-table for tag: 1 with group count: 4 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-40-05_497_2235497335242971786-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile91--.hashtable
+2025-12-22 23:40:11	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-40-05_497_2235497335242971786-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile101--.hashtable
+2025-12-22 23:40:11	End of local task; Time Taken: 1.119 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0109, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0109/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0109
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 1
+2025-12-22 23:40:17,855 Stage-5 map = 0%,  reduce = 0%
+2025-12-22 23:40:22,959 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 5.09 sec
+2025-12-22 23:40:27,045 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 6.82 sec
+MapReduce Total cumulative CPU time: 6 seconds 820 msec
+Ended Job = job_1766400508813_0109
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0110, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0110/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0110
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2025-12-22 23:40:38,461 Stage-6 map = 0%,  reduce = 0%
+2025-12-22 23:40:42,566 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 4.36 sec
+2025-12-22 23:40:47,704 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 6.37 sec
+MapReduce Total cumulative CPU time: 6 seconds 370 msec
+Ended Job = job_1766400508813_0110
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1  Reduce: 1   Cumulative CPU: 6.82 sec   HDFS Read: 1887577 HDFS Write: 96 SUCCESS
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 6.37 sec   HDFS Read: 9020 HDFS Write: 87 SUCCESS
+Total MapReduce CPU Time Spent: 13 seconds 190 msec
+OK
+Time taken: 43.267 seconds
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, batch_key, location_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+No Stats for gaokao_dw@batch_dimension, Columns: batch_name, batch_key
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222234048_f9af207b-6c4e-4e2e-9a96-2fc28f4f4498
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2025-12-22 23:40:53	Dump the side-table for tag: 1 with group count: 10 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-40-48_778_2519617272623482818-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile111--.hashtable
+2025-12-22 23:40:53	Dump the side-table for tag: 1 with group count: 15 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-40-48_778_2519617272623482818-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile121--.hashtable
+2025-12-22 23:40:53	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-40-48_778_2519617272623482818-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile131--.hashtable
+2025-12-22 23:40:53	Dump the side-table for tag: 1 with group count: 6 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-40-48_778_2519617272623482818-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile141--.hashtable
+2025-12-22 23:40:53	End of local task; Time Taken: 1.073 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0111, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0111/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0111
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 1
+2025-12-22 23:41:01,967 Stage-5 map = 0%,  reduce = 0%
+2025-12-22 23:41:07,079 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 6.89 sec
+2025-12-22 23:41:11,156 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 8.77 sec
+MapReduce Total cumulative CPU time: 8 seconds 770 msec
+Ended Job = job_1766400508813_0111
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0112, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0112/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0112
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2025-12-22 23:41:21,496 Stage-6 map = 0%,  reduce = 0%
+2025-12-22 23:41:25,583 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 4.69 sec
+2025-12-22 23:41:30,692 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 6.06 sec
+MapReduce Total cumulative CPU time: 6 seconds 60 msec
+Ended Job = job_1766400508813_0112
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1  Reduce: 1   Cumulative CPU: 8.77 sec   HDFS Read: 1889836 HDFS Write: 3464 SUCCESS
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 6.06 sec   HDFS Read: 13262 HDFS Write: 4604 SUCCESS
+Total MapReduce CPU Time Spent: 14 seconds 830 msec
+OK
+2014	专科批	文科	5	289.4	207.0	351.0
+2014	专科批	理科	8	293.38	227.0	352.0
+2014	本科一批	文科	111	560.16	326.0	649.0
+2014	本科一批	理科	156	565.96	342.0	671.0
+2014	本科三批	文科	148	393.91	328.0	451.0
+2014	本科三批	理科	162	381.33	311.0	430.0
+2014	本科二批	文科	237	477.84	363.0	533.0
+2014	本科二批	理科	281	461.09	386.0	540.0
+2014	本科提前批	文科	22	542.09	261.0	636.0
+2014	本科提前批	理科	32	537.25	278.0	657.0
+2015	专科批	文科	7	317.86	236.0	474.0
+2015	专科批	理科	8	322.0	247.0	450.0
+2015	本科一批	文科	118	589.65	526.0	665.0
+2015	本科一批	理科	165	595.01	531.0	687.0
+2015	本科三批	文科	176	413.73	317.0	482.0
+2015	本科三批	理科	191	402.15	339.0	485.0
+2015	本科二批	文科	250	501.46	434.0	569.0
+2015	本科二批	理科	311	483.69	389.0	563.0
+2015	本科提前批	文科	2	561.0	517.0	605.0
+2015	本科提前批	理科	4	517.25	459.0	627.0
+2016	专科批	体育类	1	628.0	628.0	628.0
+2016	专科批	文科	9	325.78	197.0	472.0
+2016	专科批	理科	12	293.0	235.0	371.0
+2016	专科批	艺术类	1	224.0	224.0	224.0
+2016	本科一批	文科	90	568.94	504.0	647.0
+2016	本科一批	理科	133	567.4	506.0	677.0
+2016	本科三批	文科	26	382.19	322.0	453.0
+2016	本科三批	理科	27	373.26	308.0	497.0
+2016	本科二批	文科	231	478.87	323.0	556.0
+2016	本科二批	理科	292	451.87	331.0	553.0
+2016	本科二批	艺术类	1	444.0	444.0	444.0
+2016	本科提前批	文科	13	522.23	200.0	608.0
+2016	本科提前批	理科	22	512.59	256.0	642.0
+2017	专科批	体育类	1	827.0	827.0	827.0
+2017	专科批	文科	74	306.58	167.0	441.0
+2017	专科批	理科	93	308.85	185.0	419.0
+2017	专科提前批	文科	1	398.0	398.0	398.0
+2017	专科提前批	理科	1	393.0	393.0	393.0
+2017	本科一批	文科	81	574.28	523.0	642.0
+2017	本科一批	理科	126	582.99	503.0	681.0
+2017	本科二批	体育类	1	439.0	439.0	439.0
+2017	本科二批	文科	2	439.5	400.0	479.0
+2017	本科二批	理科	2	418.5	385.0	452.0
+2017	本科二批A段	文科	241	483.71	434.0	546.0
+2017	本科二批A段	理科	315	464.65	412.0	556.0
+2017	本科二批B段	文科	147	406.6	338.0	468.0
+2017	本科二批B段	理科	156	400.53	353.0	451.0
+2017	本科提前批	文科	4	570.5	540.0	602.0
+2017	本科提前批	理科	8	534.63	412.0	634.0
+2017	本科提前批	艺术类	1	242.0	242.0	242.0
+2018	专科批	文科	69	211.8	148.0	290.0
+2018	专科批	理科	93	225.86	146.0	284.0
+2018	本科批A段	文科	204	526.48	475.0	635.0
+2018	本科批A段	理科	287	507.71	434.0	665.0
+2018	本科批B段	文科	107	438.53	380.0	494.0
+2018	本科批B段	理科	114	416.76	374.0	465.0
+2018	本科提前批	文科	1	536.0	536.0	536.0
+2018	本科提前批	理科	4	520.0	443.0	572.0
+Time taken: 42.967 seconds, Fetched: 58 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, batch_key, control_score, location_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+No Stats for gaokao_dw@batch_dimension, Columns: batch_name, batch_key
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222234131_c76c7e7b-a9cd-41fd-a234-8c3b2098518b
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:41:36	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:41:38	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-41-31_768_8519710992706943157-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile151--.hashtable (284 bytes)
+2025-12-22 23:41:38	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-41-31_768_8519710992706943157-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile161--.hashtable (336 bytes)
+2025-12-22 23:41:38	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-41-31_768_8519710992706943157-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile171--.hashtable (324 bytes)
+2025-12-22 23:41:38	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-41-31_768_8519710992706943157-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile181--.hashtable (332 bytes)
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0113, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0113/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0113
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 1
+2025-12-22 23:41:45,874 Stage-5 map = 0%,  reduce = 0%
+2025-12-22 23:41:50,049 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 7.37 sec
+2025-12-22 23:41:54,728 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 9.17 sec
+MapReduce Total cumulative CPU time: 9 seconds 170 msec
+Ended Job = job_1766400508813_0113
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0114, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0114/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0114
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2025-12-22 23:42:06,170 Stage-6 map = 0%,  reduce = 0%
+2025-12-22 23:42:10,257 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 2.1 sec
+2025-12-22 23:42:15,356 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 3.5 sec
+MapReduce Total cumulative CPU time: 3 seconds 500 msec
+Ended Job = job_1766400508813_0114
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1  Reduce: 1   Cumulative CPU: 9.17 sec   HDFS Read: 1890930 HDFS Write: 488 SUCCESS
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 3.5 sec   HDFS Read: 10133 HDFS Write: 547 SUCCESS
+Total MapReduce CPU Time Spent: 12 seconds 670 msec
+OK
+2017	天津	本科一批	126	582.99	521.0	61.99
+2017	天津	本科二批	2	418.5	395.0	23.5
+2017	青海	本科一批	144	462.3	391.0	71.3
+2017	青海	本科二批	215	376.84	356.0	20.84
+2018	青海	本科一批	70	478.42	403.0	75.42
+2018	青海	本科二批	73	386.87	365.0	21.87
+Time taken: 44.64 seconds, Fetched: 6 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, batch_key, location_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+No Stats for gaokao_dw@batch_dimension, Columns: batch_name, batch_key
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222234216_0e836389-60d3-4bbf-a122-1eceb719c9cc
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:42:20	Dump the side-table for tag: 1 with group count: 2 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-42-16_418_4142672283784631697-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile191--.hashtable
+2025-12-22 23:42:20	Dump the side-table for tag: 1 with group count: 10 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-42-16_418_4142672283784631697-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile201--.hashtable
+2025-12-22 23:42:20	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-42-16_418_4142672283784631697-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile211--.hashtable
+2025-12-22 23:42:21	Dump the side-table for tag: 1 with group count: 2 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-42-16_418_4142672283784631697-1/-local-10009/HashTable-Stage-5/MapJoin-mapfile221--.hashtable
+2025-12-22 23:42:21	End of local task; Time Taken: -0.335 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0115, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0115/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0115
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 1
+2025-12-22 23:42:28,019 Stage-5 map = 0%,  reduce = 0%
+2025-12-22 23:42:33,126 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 7.13 sec
+2025-12-22 23:42:37,211 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 8.88 sec
+MapReduce Total cumulative CPU time: 8 seconds 880 msec
+Ended Job = job_1766400508813_0115
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0116, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0116/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0116
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2025-12-22 23:42:48,727 Stage-6 map = 0%,  reduce = 0%
+2025-12-22 23:42:52,819 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 4.3 sec
+2025-12-22 23:42:56,395 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 5.62 sec
+MapReduce Total cumulative CPU time: 5 seconds 620 msec
+Ended Job = job_1766400508813_0116
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1  Reduce: 1   Cumulative CPU: 8.88 sec   HDFS Read: 1889836 HDFS Write: 216 SUCCESS
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 5.62 sec   HDFS Read: 10014 HDFS Write: 253 SUCCESS
+Total MapReduce CPU Time Spent: 14 seconds 500 msec
+OK
+2018	本科提前批	文科	2	474.64	335.28	614.0
+2018	本科提前批	理科	5	469.36	272.82	639.0
+Time taken: 41.032 seconds, Fetched: 2 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: time_key, university_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@university_dimension, Columns: university_province, university_name, university_key
+Query ID = windy_20251222234257_dbfd13d3-355c-49fd-9025-52b875150790
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:43:02	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:43:03	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-42-57_466_325927063881983289-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile231--.hashtable (121519 bytes)
+2025-12-22 23:43:03	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-42-57_466_325927063881983289-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile241--.hashtable (280 bytes)
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0117, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0117/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0117
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2025-12-22 23:43:10,985 Stage-3 map = 0%,  reduce = 0%
+2025-12-22 23:43:15,075 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 6.87 sec
+2025-12-22 23:43:20,186 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 8.73 sec
+MapReduce Total cumulative CPU time: 8 seconds 730 msec
+Ended Job = job_1766400508813_0117
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0118, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0118/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0118
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2025-12-22 23:43:29,603 Stage-4 map = 0%,  reduce = 0%
+2025-12-22 23:43:34,712 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 2.09 sec
+2025-12-22 23:43:38,787 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 3.53 sec
+MapReduce Total cumulative CPU time: 3 seconds 530 msec
+Ended Job = job_1766400508813_0118
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 8.73 sec   HDFS Read: 1880895 HDFS Write: 96 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 3.53 sec   HDFS Read: 9682 HDFS Write: 87 SUCCESS
+Total MapReduce CPU Time Spent: 12 seconds 260 msec
+OK
+Time taken: 42.376 seconds
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, batch_key, location_key, time_key, university_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+No Stats for gaokao_dw@university_dimension, Columns: university_province, university_name, university_key
+No Stats for gaokao_dw@batch_dimension, Columns: batch_name, batch_key
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222234339_99641c3b-3b13-480c-9946-51631c1f6884
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:43:45	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:43:46	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-43-39_856_5635328043221892092-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile251--.hashtable (121519 bytes)
+2025-12-22 23:43:46	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-43-39_856_5635328043221892092-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile261--.hashtable (284 bytes)
+2025-12-22 23:43:46	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-43-39_856_5635328043221892092-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile271--.hashtable (284 bytes)
+2025-12-22 23:43:46	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-43-39_856_5635328043221892092-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile291--.hashtable
+2025-12-22 23:43:46	End of local task; Time Taken: 1.171 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0119, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0119/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0119
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2025-12-22 23:43:53,162 Stage-6 map = 0%,  reduce = 0%
+2025-12-22 23:43:55,822 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 7.96 sec
+2025-12-22 23:44:00,935 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 9.73 sec
+MapReduce Total cumulative CPU time: 9 seconds 730 msec
+Ended Job = job_1766400508813_0119
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0120, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0120/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0120
+Hadoop job information for Stage-7: number of mappers: 1; number of reducers: 1
+2025-12-22 23:44:13,955 Stage-7 map = 0%,  reduce = 0%
+2025-12-22 23:44:18,059 Stage-7 map = 100%,  reduce = 0%, Cumulative CPU 5.6 sec
+2025-12-22 23:44:23,170 Stage-7 map = 100%,  reduce = 100%, Cumulative CPU 7.02 sec
+MapReduce Total cumulative CPU time: 7 seconds 20 msec
+Ended Job = job_1766400508813_0120
+MapReduce Jobs Launched: 
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 9.73 sec   HDFS Read: 1893175 HDFS Write: 1134 SUCCESS
+Stage-Stage-7: Map: 1  Reduce: 1   Cumulative CPU: 7.02 sec   HDFS Read: 10688 HDFS Write: 1353 SUCCESS
+Total MapReduce CPU Time Spent: 16 seconds 750 msec
+OK
+重庆大学	重庆	2	607.0	599.0	615.0
+电子科技大学（沙河校区）	四川	2	606.5	600.0	613.0
+南京航空航天大学	江苏	2	602.0	592.0	612.0
+西南交通大学	四川	2	588.0	575.0	601.0
+武汉理工大学	湖北	2	585.5	579.0	592.0
+中国药科大学	江苏	2	584.5	571.0	598.0
+中国海洋大学	山东	2	584.0	566.0	602.0
+大连理工大学盘锦校区	辽宁	2	583.0	573.0	593.0
+河海大学	江苏	2	577.0	565.0	589.0
+西南大学	重庆	2	572.0	562.0	582.0
+河北工业大学	天津	2	565.5	553.0	578.0
+上海理工大学	上海	2	560.5	555.0	566.0
+上海海事大学	上海	2	559.0	538.0	580.0
+宁波大学	浙江	2	543.5	536.0	551.0
+南京信息工程大学	江苏	2	542.5	535.0	550.0
+Time taken: 44.375 seconds, Fetched: 15 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: time_key, university_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@university_dimension, Columns: university_province, university_name, university_key
+Query ID = windy_20251222234424_4a362549-6784-4cff-9036-394942766337
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:44:28	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:44:29	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-44-24_250_5298538619745361370-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile301--.hashtable (121519 bytes)
+2025-12-22 23:44:29	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-44-24_250_5298538619745361370-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile311--.hashtable (300 bytes)
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0121, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0121/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0121
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2025-12-22 23:44:36,608 Stage-3 map = 0%,  reduce = 0%
+2025-12-22 23:44:41,760 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 7.61 sec
+2025-12-22 23:44:46,877 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 9.73 sec
+MapReduce Total cumulative CPU time: 9 seconds 730 msec
+Ended Job = job_1766400508813_0121
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0122, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0122/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0122
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2025-12-22 23:44:57,234 Stage-4 map = 0%,  reduce = 0%
+2025-12-22 23:45:01,329 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 4.8 sec
+2025-12-22 23:45:06,435 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 6.15 sec
+MapReduce Total cumulative CPU time: 6 seconds 150 msec
+Ended Job = job_1766400508813_0122
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 9.73 sec   HDFS Read: 1880749 HDFS Write: 29363 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 6.15 sec   HDFS Read: 38589 HDFS Write: 1057 SUCCESS
+Total MapReduce CPU Time Spent: 15 seconds 880 msec
+OK
+河北政法职业学院	河北	2	187.0	178.0
+天津石油职业技术学院	天津	2	192.0	173.0
+天津机电职业技术学院	天津	2	196.5	189.0
+天津渤海职业技术学院	天津	2	197.5	190.0
+天津城市职业学院	天津	2	199.0	196.0
+山东水利职业学院	山东	2	201.5	189.0
+河南检察职业学院	河南	2	203.5	199.0
+天津工程职业技术学院	天津	2	205.5	198.0
+天津国土资源和房屋职业学院	天津	2	206.0	202.0
+天津广播影视职业学院	天津	2	207.5	199.0
+Time taken: 43.262 seconds, Fetched: 10 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, batch_key, location_key, time_key, university_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+No Stats for gaokao_dw@university_dimension, Columns: university_province, university_name, university_key
+No Stats for gaokao_dw@batch_dimension, Columns: batch_name, batch_key
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222234507_044e5e02-cf4f-4d9c-991f-9d022f885f54
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2025-12-22 23:45:14	Dump the side-table for tag: 1 with group count: 2072 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-07_533_8665647396858703486-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile321--.hashtable
+2025-12-22 23:45:14	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-07_533_8665647396858703486-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile331--.hashtable (619 bytes)
+2025-12-22 23:45:14	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-07_533_8665647396858703486-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile341--.hashtable (284 bytes)
+2025-12-22 23:45:14	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-07_533_8665647396858703486-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile351--.hashtable (284 bytes)
+2025-12-22 23:45:14	Dump the side-table for tag: 1 with group count: 4 into file: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-07_533_8665647396858703486-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile361--.hashtable
+2025-12-22 23:45:14	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-07_533_8665647396858703486-1/-local-10010/HashTable-Stage-6/MapJoin-mapfile361--.hashtable (340 bytes)
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0123, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0123/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0123
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2025-12-22 23:45:21,678 Stage-6 map = 0%,  reduce = 0%
+2025-12-22 23:45:26,796 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 7.67 sec
+2025-12-22 23:45:30,438 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 9.75 sec
+MapReduce Total cumulative CPU time: 9 seconds 750 msec
+Ended Job = job_1766400508813_0123
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0124, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0124/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0124
+Hadoop job information for Stage-7: number of mappers: 1; number of reducers: 1
+2025-12-22 23:45:42,095 Stage-7 map = 0%,  reduce = 0%
+2025-12-22 23:45:46,185 Stage-7 map = 100%,  reduce = 0%, Cumulative CPU 5.38 sec
+2025-12-22 23:45:51,333 Stage-7 map = 100%,  reduce = 100%, Cumulative CPU 7.03 sec
+MapReduce Total cumulative CPU time: 7 seconds 30 msec
+Ended Job = job_1766400508813_0124
+MapReduce Jobs Launched: 
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 9.75 sec   HDFS Read: 1893344 HDFS Write: 34817 SUCCESS
+Stage-Stage-7: Map: 1  Reduce: 1   Cumulative CPU: 7.03 sec   HDFS Read: 44364 HDFS Write: 1282 SUCCESS
+Total MapReduce CPU Time Spent: 16 seconds 780 msec
+OK
+呼伦贝尔学院	内蒙古	理科	1	214.0	214.0
+兰州工业学院	甘肃	文科	1	232.0	232.0
+乌鲁木齐职业大学	新疆	理科	1	250.0	250.0
+呼伦贝尔学院	内蒙古	文科	1	276.0	276.0
+乌鲁木齐职业大学	新疆	文科	1	291.0	291.0
+呼和浩特民族学院	内蒙古	理科	2	303.0	231.0
+赤峰学院	内蒙古	理科	2	317.0	249.0
+赣南医学院	江西	体育类	1	331.0	331.0
+厦门工学院	福建	理科	1	334.0	334.0
+云南师范大学文理学院	云南	理科	1	337.0	337.0
+云南大学旅游文化学院	云南	理科	2	338.11	338.0
+桂林理工大学博文管理学院	广西	理科	1	340.0	340.0
+Time taken: 44.877 seconds, Fetched: 12 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, location_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222234552_bb645817-d6c0-490f-b230-35185edc6adb
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:45:57	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:45:58	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-52_428_6723967263880127473-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile371--.hashtable (284 bytes)
+2025-12-22 23:45:58	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-52_428_6723967263880127473-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile381--.hashtable (401 bytes)
+2025-12-22 23:45:58	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-45-52_428_6723967263880127473-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile391--.hashtable (280 bytes)
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0125, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0125/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0125
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2025-12-22 23:46:04,425 Stage-4 map = 0%,  reduce = 0%
+2025-12-22 23:46:09,548 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 8.01 sec
+2025-12-22 23:46:15,686 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 10.4 sec
+MapReduce Total cumulative CPU time: 10 seconds 400 msec
+Ended Job = job_1766400508813_0125
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0126, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0126/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0126
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 1
+2025-12-22 23:46:27,095 Stage-5 map = 0%,  reduce = 0%
+2025-12-22 23:46:29,674 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 2.32 sec
+2025-12-22 23:46:34,836 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 3.75 sec
+MapReduce Total cumulative CPU time: 3 seconds 750 msec
+Ended Job = job_1766400508813_0126
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 10.4 sec   HDFS Read: 1876488 HDFS Write: 96 SUCCESS
+Stage-Stage-5: Map: 1  Reduce: 1   Cumulative CPU: 3.75 sec   HDFS Read: 9876 HDFS Write: 87 SUCCESS
+Total MapReduce CPU Time Spent: 14 seconds 150 msec
+OK
+Time taken: 43.469 seconds
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: batch_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@batch_dimension, Columns: batch_name, batch_key
+Query ID = windy_20251222234635_a6f62d19-3c4b-4a02-9366-21a41deb9a88
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:46:40	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:46:41	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-46-35_914_8472479556885655368-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile401--.hashtable (284 bytes)
+2025-12-22 23:46:41	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-46-35_914_8472479556885655368-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile411--.hashtable (404 bytes)
+2025-12-22 23:46:41	End of local task; Time Taken: 1.066 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0127, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0127/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0127
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2025-12-22 23:46:48,801 Stage-3 map = 0%,  reduce = 0%
+2025-12-22 23:46:53,910 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 6.05 sec
+2025-12-22 23:46:58,002 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 8.15 sec
+MapReduce Total cumulative CPU time: 8 seconds 150 msec
+Ended Job = job_1766400508813_0127
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0128, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0128/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0128
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2025-12-22 23:47:08,644 Stage-4 map = 0%,  reduce = 0%
+2025-12-22 23:47:12,733 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 5.29 sec
+2025-12-22 23:47:17,878 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 7.11 sec
+MapReduce Total cumulative CPU time: 7 seconds 110 msec
+Ended Job = job_1766400508813_0128
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 8.15 sec   HDFS Read: 1875107 HDFS Write: 369 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 7.11 sec   HDFS Read: 9280 HDFS Write: 320 SUCCESS
+Total MapReduce CPU Time Spent: 15 seconds 260 msec
+OK
+2014	753	534.42	576.0	548.07	57.71
+2015	830	531.0	579.94	549.11	59.65
+2016	676	526.0	570.0	543.97	52.97
+2017	712	518.0	570.0	539.3	59.75
+2018	106	462.93	513.04	490.31	50.54
+Time taken: 43.048 seconds, Fetched: 5 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: location_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@location_dimension, Columns: location_key, province_name
+Query ID = windy_20251222234718_ee5ad692-eac1-4b61-90e6-4c0bf8880d88
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:47:25	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-47-18_975_6896961078187043683-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile421--.hashtable (401 bytes)
+2025-12-22 23:47:25	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-47-18_975_6896961078187043683-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile431--.hashtable (300 bytes)
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0129, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0129/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0129
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2025-12-22 23:47:32,445 Stage-3 map = 0%,  reduce = 0%
+2025-12-22 23:47:37,579 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 6.63 sec
+2025-12-22 23:47:42,692 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 8.81 sec
+MapReduce Total cumulative CPU time: 8 seconds 810 msec
+Ended Job = job_1766400508813_0129
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0130, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0130/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0130
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2025-12-22 23:47:54,595 Stage-4 map = 0%,  reduce = 0%
+2025-12-22 23:47:59,735 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 6.11 sec
+2025-12-22 23:48:02,349 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 7.6 sec
+MapReduce Total cumulative CPU time: 7 seconds 600 msec
+Ended Job = job_1766400508813_0130
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 8.81 sec   HDFS Read: 1874886 HDFS Write: 322 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 7.6 sec   HDFS Read: 10484 HDFS Write: 304 SUCCESS
+Total MapReduce CPU Time Spent: 16 seconds 410 msec
+OK
+天津	879	146.0	410.0	465.0	511.0	665.0	438.89	101.0
+广西	18	270.5	339.25	463.5	542.25	639.0	444.62	203.0
+青海	368	172.0	356.5	411.5	466.0	599.0	409.12	109.5
+Time taken: 44.435 seconds, Fetched: 3 row(s)
+No Stats for gaokao_dw@gaokao_admission_fact, Columns: candidate_key, time_key, avg_score
+No Stats for gaokao_dw@time_dimension, Columns: year, time_key
+No Stats for gaokao_dw@candidate_type_dimension, Columns: candidate_key, candidate_type
+Query ID = windy_20251222234803_3f13ab6a-52af-4b57-94d0-bb17d6e89c32
+Total jobs = 2
+SLF4J: Found binding in [jar:file:/opt/bigdata/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/bigdata/hadoop-3.3.6/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2025-12-22 23:48:08	Starting to launch local task to process map join;	maximum memory = 239075328
+2025-12-22 23:48:10	Uploaded 1 File to: file:/tmp/windy/4944bf7f-fbf8-45d2-a1f6-66bb4e0f426b/hive_2025-12-22_23-48-03_429_7975130894200414490-1/-local-10007/HashTable-Stage-3/MapJoin-mapfile441--.hashtable (324 bytes)
+2025-12-22 23:48:10	End of local task; Time Taken: 1.301 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0131, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0131/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0131
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2025-12-22 23:48:16,987 Stage-3 map = 0%,  reduce = 0%
+2025-12-22 23:48:22,115 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 7.32 sec
+2025-12-22 23:48:27,239 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 9.49 sec
+MapReduce Total cumulative CPU time: 9 seconds 490 msec
+Ended Job = job_1766400508813_0131
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1766400508813_0132, Tracking URL = http://Windy.localdomain:8088/proxy/application_1766400508813_0132/
+Kill Command = /opt/bigdata/hadoop-3.3.6/bin/mapred job  -kill job_1766400508813_0132
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2025-12-22 23:48:37,458 Stage-4 map = 0%,  reduce = 0%
+2025-12-22 23:48:41,559 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 4.47 sec
+2025-12-22 23:48:46,656 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 5.8 sec
+MapReduce Total cumulative CPU time: 5 seconds 800 msec
+Ended Job = job_1766400508813_0132
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 9.49 sec   HDFS Read: 1874593 HDFS Write: 230 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 5.8 sec   HDFS Read: 10049 HDFS Write: 221 SUCCESS
+Total MapReduce CPU Time Spent: 15 seconds 290 msec
+OK
+文科	2112	148.0	421.0	467.0	512.0	653.0	459.14
+理科	2732	146.0	374.0	427.5	481.0	681.0	428.87
+Time taken: 44.279 seconds, Fetched: 2 row(s)
