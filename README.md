@@ -58,6 +58,15 @@ Gaokao-Score-Hive-DataWarehouse/
 
 ---
 
+
+## Results
+
+<div align="center">
+  <img src="data/visualizations/01_分数线趋势图.png" alt="Score line trend" width="70%"/>
+  <img src="data/visualizations/06_省份批次热力图.png" alt="Province-batch heatmap" width="70%"/>
+</div>
+
+---
 ## License
 
 MIT — free to use, modify and distribute.
