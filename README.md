@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📚 Gaokao-Score-Hive-DataWarehouse
+# 高考分数线数据仓库 | Gaokao-Score-Hive-DataWarehouse
 
 ### An end-to-end data warehouse for college-entrance (Gaokao) scores.
 
